@@ -7,7 +7,10 @@ The motivation is to replace the existing WiFi module/firmware with the excellen
 
 ### Update
 
-11.03.2021: Added ESPHome yaml file for the Power SE WiFi Plug.
+#### 11.03.2021
+
+- Added ESPHome yaml file for the Power SE WiFi Plug.
+- Uploaded picture of Power SE ESP12-E modification
 
 ### Power SE ESPHome modification
 
