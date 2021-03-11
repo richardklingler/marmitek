@@ -1,10 +1,13 @@
 ## Marmitek Smart Home Devices Reverse Engineering
 
-![Marmitek Power SE WiFi Plug](images/power_se.jpeg)
+![Marmitek Power LI](images/powerli.jpg)
 
-This repository contains documentation about Marmitek Smart Home devices, mainly WiFi power plugs and WiFi power strips like the Power Li.
-
+This repository contains documentation about Marmitek WiFi Plug Power SE and WiFi socker strip Power Li.
 The motivation is to replace the existing WiFi module/firmware with the excellent ESPHome project.
+
+### Update
+
+11.03.2021: Added ESPHome yaml file for the Power SE WiFi Plug.
 
 ### Power SE ESPHome modification
 
