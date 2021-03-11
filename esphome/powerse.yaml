@@ -23,21 +23,25 @@ api:
 ota:
 
 switch:
+  # We use GPIO5 as the positive driven output for the relay
   - platform: gpio
     name: "WiFi Plug Relay"
     pin: 5
     icon: "mdi:power-socket-fr"
     id: powerse_relay
+    # Switch on/off the LED output as well
     on_turn_on:
       - switch.turn_on: powerse_led
     on_turn_off:
       - switch.turn_off: powerse_led
+  # Use GPIO4 for driving the orange LEDs, but active low
   - platform: gpio
     id: powerse_led
     pin:
       number: 4
       inverted: yes
 binary_sensor:
+  # THe push button is conneced to GPIO2 but active low
   - platform: gpio
     pin:
       number: 2
@@ -45,6 +49,7 @@ binary_sensor:
     name: "WiFi Plug Button"
     filters:
       - delayed_on: 20ms
+    # We also need to switch the relay output accordingly
     on_press:
       then:
         - switch.toggle: powerse_relay
