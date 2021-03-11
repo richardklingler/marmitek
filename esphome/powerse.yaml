@@ -1,0 +1,50 @@
+esphome:
+  name: powerse_1
+  platform: ESP8266
+  board: esp12e
+
+wifi:
+  ssid: "MyWiFiSSID"
+  password: "MyWiFiPassword"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Power SE 1 Fallback Hotspot"
+    password: "zSbBqdCUYJm7"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+
+switch:
+  - platform: gpio
+    name: "WiFi Plug Relay"
+    pin: 5
+    icon: "mdi:power-socket-fr"
+    id: powerse_relay
+    on_turn_on:
+      - switch.turn_on: powerse_led
+    on_turn_off:
+      - switch.turn_off: powerse_led
+  - platform: gpio
+    id: powerse_led
+    pin:
+      number: 4
+      inverted: yes
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: 2
+      inverted: yes
+    name: "WiFi Plug Button"
+    filters:
+      - delayed_on: 20ms
+    on_press:
+      then:
+        - switch.toggle: powerse_relay
