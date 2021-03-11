@@ -6,3 +6,9 @@ This repository contains documentation about Marmitek Smart Home devices, mainly
 
 The motivation is to replace the existing WiFi module/firmware with the excellent ESPHome project.
 
+## Power SE ESPHome modification
+
+Replaced the TYWE2S module with a ESP12-E.
+
+![Marmitek Power SE ESPHome](images/powerse_mods.jpg)
+
