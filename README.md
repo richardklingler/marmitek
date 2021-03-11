@@ -10,5 +10,5 @@ The motivation is to replace the existing WiFi module/firmware with the excellen
 
 Replaced the TYWE2S module with a ESP12-E.
 
-![Marmitek Power SE ESPHome](images/powerse_mods.jpg)
+![Marmitek Power SE ESPHome](images/powerse_mod.jpg)
 
