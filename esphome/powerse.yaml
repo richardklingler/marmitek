@@ -41,7 +41,7 @@ switch:
       number: 4
       inverted: yes
 binary_sensor:
-  # THe push button is conneced to GPIO2 but active low
+  # The push button is connected to GPIO2 but active low
   - platform: gpio
     pin:
       number: 2
