@@ -9,7 +9,7 @@ The motivation is to replace the existing WiFi module/firmware with the excellen
 
 #### 11.03.2021
 
-- Added BL0937 AC measurement IC used in Power Li strip
+- Added BL0937 AC measurement IC datasheet used in Power Li strip
 - Added ESPHome yaml file for the Power SE WiFi Plug.
 - Uploaded picture of Power SE ESP12-E modification
 
