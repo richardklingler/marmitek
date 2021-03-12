@@ -9,7 +9,7 @@ The motivation is to replace the existing WiFi module/firmware with the excellen
 
 All my reverse engineering work is paid with my low little budget, so every donation is very welcome, either through the Patreon link on the side or through Paypal Me:
 
-    https://paypal.me/renderingfun
+[Paypal Me](https://paypal.me/renderingfun)
 
 ### Update
 
