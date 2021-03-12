@@ -7,6 +7,10 @@ The motivation is to replace the existing WiFi module/firmware with the excellen
 
 ### Update
 
+#### 12.03.2021
+
+- Added first draft of Power Li socket strip schematic
+
 #### 11.03.2021
 
 - Added BL0937 AC measurement IC datasheet used in Power Li strip
