@@ -4,8 +4,8 @@ esphome:
   board: esp12e
 
 wifi:
-  ssid: "MyWiFiSSID"
-  password: "MyWiFiPassword"
+  ssid: "YourWifiSSID"
+  password: "YourWiFiPassword"
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
@@ -57,3 +57,10 @@ binary_sensor:
     name: "WiFi Reset Button"
     filters:
       - delayed_on: 20ms
+sensor:
+  - platform: pulse_counter
+    pin: 4
+    name: "Power Counter"
+    unit_of_measurement: 'W'
+    filters:
+      - multiply: 0.1
