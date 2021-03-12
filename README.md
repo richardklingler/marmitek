@@ -38,6 +38,7 @@ Replaced the WR3E module with an ESP12-E.
 #### What is working
 
 - Switching on/off all 4 relays
+- Detect reset button
 
 #### What is not working
 
