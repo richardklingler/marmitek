@@ -1,0 +1,59 @@
+esphome:
+  name: powerli
+  platform: ESP8266
+  board: esp12e
+
+wifi:
+  ssid: "MyWiFiSSID"
+  password: "MyWiFiPassword"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Power Li Fallback Hotspot"
+    password: "cNnRZc7jvnIb"
+
+captive_portal:
+
+# Disable TXD/RXD for use as GPIO
+logger:
+  baud_rate: 0
+
+# Enable Home Assistant API
+api:
+
+ota:
+
+# Relay outputs
+# We can't use TXD as GPIO output as the optocoupler circuit
+# behind pulls pin low on power up, therefore disabling boot.
+# So remove resitors R24 and R25 close to socket output L-OUT4.
+switch:
+  - platform: gpio
+    name: "Relay 1"
+    pin: 15
+  - platform: gpio
+    name: "Relay 2"
+    pin: 3
+  - platform: gpio
+    name: "Relay 3"
+    pin: 14
+  - platform: gpio
+    name: "Relay 4"
+    pin: 13
+  - platform: gpio
+    name: "Relay 5"
+    pin: 1
+  - platform: gpio
+    name: "LED"
+    pin:
+      number: 16
+      inverted: yes
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: 0
+      inverted: yes
+      mode: INPUT_PULLUP
+    name: "WiFi Reset Button"
+    filters:
+      - delayed_on: 20ms
