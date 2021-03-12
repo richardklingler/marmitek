@@ -27,7 +27,21 @@ All my reverse engineering work is paid with my low little budget, so every dona
 
 ### Power SE ESPHome modification
 
-Replaced the TYWE2S module with a ESP12-E.
+Replaced the TYWE2S module with an ESP12-E.
 
 ![Marmitek Power SE ESPHome](images/powerse_mod.jpg)
+
+### Power Li ESPHome modification
+
+Replaced the WR3E module with an ESP12-E.
+
+#### What is working
+
+- Switching on/off all 4 relays
+
+#### What is not working
+
+- Although the ESP12E module is pin compatible with the original module, TXD as GPIO1 can't be used for turning on the USB charger supply as during power up TXD detects a pull down and disables booting.
+
+![Marmitek Power Li ESPHome](images/powerli_mod.jpg)
 
