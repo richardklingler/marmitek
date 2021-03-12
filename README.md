@@ -16,6 +16,7 @@ All my reverse engineering work is paid with my low little budget, so every dona
 #### 12.03.2021
 
 - Added first draft of Power Li socket strip schematic
+- Added first version of Power Li YAML file
 
 #### 11.03.2021
 
