@@ -5,6 +5,12 @@
 This repository contains documentation about Marmitek WiFi Plug Power SE and WiFi socker strip Power Li.
 The motivation is to replace the existing WiFi module/firmware with the excellent ESPHome project.
 
+### Sponsoring
+
+All my reverse engineering work is paid with my low little budget, so every donation is very welcome, either through the Patreon link on the side or through Paypal Me:
+
+    https://paypal.me/renderingfun
+
 ### Update
 
 #### 12.03.2021
