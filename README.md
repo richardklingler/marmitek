@@ -56,12 +56,14 @@ Replaced the WR3E module with an ESP12-E.
 The Power SI WiFi plug is similar to the Power SE plug but with added BL0937 power metering IC and two USB charging outputs.
 It also uses the TYWE2S WiFi module which needs to be replaced for example with an ESP-M3 module due to space limitation inside.
 
+![Marmitek Power SI](images/powersi_open.jpg)
+
 Following pins of the TYWE2S module have been identified:
 
                        3V3 Power
     05  CF1 BL0937
                        GND Power
-    04  CF BL0937
+    04  CF  BL0937
                        RX  Push Button
     13  WiFi LED
                        TX
