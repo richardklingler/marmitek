@@ -58,9 +58,18 @@ binary_sensor:
     filters:
       - delayed_on: 20ms
 sensor:
-  - platform: pulse_counter
-    pin: 4
-    name: "Power Counter"
-    unit_of_measurement: 'W'
-    filters:
-      - multiply: 0.1
+  - platform: bl0937
+    sel_pin: 12
+    cf_pin: 4
+    cf1_pin: 5
+    current:
+      name: "BL0937 Current"
+    voltage:
+      name: "BL0937 Voltage"
+    power:
+      name: "BL0937 Power"
+    energy:
+      name: "BL0937 Energy"
+    update_interval: 10s
+    change_mode_every: 3
+    initial_mode: CURRENT

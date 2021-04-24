@@ -13,6 +13,10 @@ All my reverse engineering work is paid with my low little budget, so every dona
 
 ### Update
 
+#### 24.04.2021
+
+- Use of BL0937 custom component for Power Li socket strip
+
 #### 12.03.2021
 
 - Added first draft of Power Li socket strip schematic
