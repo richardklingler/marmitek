@@ -71,3 +71,18 @@ Following pins of the TYWE2S module have been identified:
                        12  SEL BL0937
     RST 
                        14  Relais
+
+#### Power SI ESP-M3 modification
+
+![Marmitek Power SI with ESP-M3](images/powersi_mod1.jpg)
+
+The ESP-M3 module fits nicely onto the Power SI WiFi plug. From the ESP-M3 following GPIOs are used:
+
+    GPIO0   Red Status LED
+    GPIO3   Push Button
+    GPIO4   BL0937 CF Pin
+    GPIO12  Relais
+    GPIO14  BL0937 CF1 Pin
+    GPIO16  BL0937 SEL Pin
+
+![Marmitek Power SI with ESP-M3](images/powersi_mod2.jpg)
